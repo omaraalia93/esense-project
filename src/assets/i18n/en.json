@@ -1,0 +1,45 @@
+{
+    "general": {
+        "loading":"Please Wait...",
+        "add":"Add",
+        "delete":"Delete",
+        "edit":"Edit",
+        "cancel":"Cancel",
+        "save":"save",
+        "delete_alert":"Are you sure?",
+        "yes":"yes",
+        "no":"noe",
+        "no_data_found":"No Data Found",
+        "change_language":"Change language"
+    },
+    "header": {
+        "user_image":"User image"
+    },
+    "main":{
+        "records": {
+            "title":"Records",
+            "tabs": {
+                "dashboard":"Dashboard",
+                "system_settings":"System settings"
+            }
+        }
+    },
+    "system_settings": {
+        "transaction_management":"Transaction Management",
+        "third_party_recipient_group":"Third-party recipient group",
+        "users": {
+            "search_by_name":"Search by name",
+            "add_name":"Add Name",
+            "edit_name":"Edit Name",
+            "delete_name":"Delete Name",
+            "name":"Name",
+            "details":"Details",
+            "name_required":"Name is required"
+        }
+    },
+    "toastr_message":{
+        "name_added_successfully":"Name added successfully",
+        "name_update_successfully":"Name updated successfully",
+        "name_deleted_successfully":"Name deleted successfully"
+    }
+}

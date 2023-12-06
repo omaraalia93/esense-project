@@ -1,0 +1,45 @@
+{
+    "general": {
+        "loading":"الرجاء الانتظار...",
+        "add":"اضافة",
+        "delete":"حذف",
+        "edit":"تعديل",
+        "cancel":"الغاء",
+        "save":"حفظ",
+        "delete_alert":"هل انت متاكد؟",
+        "yes":"نعم",
+        "no":"لا",
+        "no_data_found":"لا يوجد بيانات",
+        "change_language":"تغيير اللغة"
+    },
+    "header": {
+        "user_image":"صورة المستخدم"
+    },
+    "main":{
+        "records": {
+            "title":"سجلات",
+            "tabs": {
+                "dashboard":"لوحة القيادة",
+                "system_settings":"اعدادات النظام"
+            }
+        }
+    },
+    "system_settings": {
+        "transaction_management":"'ادارة المعاملات",
+        "third_party_recipient_group":"محموعة المستلمين للجهات الخارجية",
+        "users": {
+            "search_by_name":"ابحث عن اسم",
+            "add_name":"اضافة اسم",
+            "edit_name":"تعديل الاسم",
+            "delete_name":"حذف الاسم",
+            "name":"الاسم",
+            "details":"التفاصيل",
+            "name_required":"يجب ادخال الاسم"
+        }
+    },
+    "toastr_message":{
+        "name_added_successfully":"تم اضافة الاسم بنجاج",
+        "name_update_successfully":"تم تعديل الاسم بنجاح",
+        "name_deleted_successfully":"تم حذف الاسم بنجاح"
+    }
+}

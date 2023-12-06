@@ -1,0 +1,17 @@
+<div class="side-nav">
+    <div class="sn-navbar">
+        <ul class="sn-list">
+            <li class="lvl-1" *ngFor="let topLevelItem of list">
+              <a >{{ topLevelItem.title | translate }}</a>
+              <ul>
+                <li class="lvl-2" *ngFor="let subItem of topLevelItem.subItems">
+                  <a [routerLink]="subItem.route" routerLinkActive="active">{{ subItem.title | translate }}</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+    </div>
+    <div class="sn-content">
+        <ng-content></ng-content>
+    </div>
+</div>

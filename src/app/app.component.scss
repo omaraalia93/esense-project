@@ -1,0 +1,25 @@
+    .tabs-bar {
+        display: flex;
+        background-color: var(--bg-color-tabs-bar);
+
+        .tab {
+            padding: 0.2em 0.8em;
+            color: #fff;
+            font-size: 0.8rem;
+            cursor: pointer;
+            border-bottom: 3px solid transparent;
+            border-right: 1px solid transparent;
+            border-left: 1px solid transparent;
+
+            &.active {
+                background: linear-gradient(#2a2828, #434343);
+                border-bottom: 3px solid #fff;
+                border-right: 1px solid #595959;
+                border-left: 1px solid #595959;
+            }
+            
+            &:hover {
+                background: linear-gradient(#2a2828, #434343);
+            }
+        }
+    }

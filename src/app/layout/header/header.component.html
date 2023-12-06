@@ -1,0 +1,15 @@
+<div class="header">
+    <div class="hdr-title">
+        {{ 'main.records.title' | translate }}
+    </div>
+    <button type="button" (click)="changeLangauge()">
+        {{"general.change_language" | translate}}
+    </button>
+    <div class="hdr-profile">
+        <span> {{ userName }} </span>
+
+        <div class="img-container"> 
+            <img src="../../../assets/images/user-photo.jpg" [alt]="'header.user_image' | translate " />
+        </div>
+    </div>
+</div>

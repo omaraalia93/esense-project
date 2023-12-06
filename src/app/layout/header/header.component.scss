@@ -1,0 +1,47 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color:#fff;
+    background-color: var(--bg-color-header);
+    padding: 0.7em 0em 0.7em 0.7em;
+    font-size: 0.9rem;
+    
+    .hdr-profile {
+        display: flex;
+        gap: 1em;
+
+        .img-container {
+            height: 30px;
+            width: 30px;
+            filter: drop-shadow(0px 0px 1px black);
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                overflow: hidden;
+                border-radius: 0.3em;
+            }
+        }
+    }
+    
+    .hdr-title {
+         background-color: var(--bg-color-header-title);
+         padding: 0 1em;
+    }
+
+    button {
+        color: #fff;
+        background: #2a2828;
+        border: 1px solid #727272;
+        padding: 0.1em 2em;
+        cursor: pointer;
+    }
+}
+
+:host-context(html[dir="ltr"]) {
+    .header {
+        padding: 0.7em 0.7em 0.7em 0em;
+    }
+  }

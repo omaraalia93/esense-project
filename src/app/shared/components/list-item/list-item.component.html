@@ -1,0 +1,23 @@
+<div class="item">
+    <span class="text">
+        {{ item.name }}
+    </span>
+    <div class="btns">
+        <button type="button" class="primary" (click)="editClick()">
+            <svg  xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" fill="currentColor">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.56078 20.2501L20.5608 8.25011L15.7501 3.43945L3.75012 15.4395V20.2501H8.56078ZM15.7501 5.56077L18.4395 8.25011L16.5001 10.1895L13.8108 7.50013L15.7501 5.56077ZM12.7501 8.56079L15.4395 11.2501L7.93946 18.7501H5.25012L5.25012 16.0608L12.7501 8.56079Z"/>
+                </svg>
+            <span>
+                {{ "general.edit" | translate }}
+            </span>
+        </button>
+        <button type="button" class="danger" (click)="deleteClick()">
+            <svg  xmlns="http://www.w3.org/2000/svg"  width="20px" height="20px" viewBox="0 0 24 24" fill="none">
+                <path d="M6 7V18C6 19.1046 6.89543 20 8 20H16C17.1046 20 18 19.1046 18 18V7M6 7H5M6 7H8M18 7H19M18 7H16M10 11V16M14 11V16M8 7V5C8 3.89543 8.89543 3 10 3H14C15.1046 3 16 3.89543 16 5V7M8 7H16" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            <span>
+                {{ "general.delete" | translate }}
+            </span>
+        </button>
+    </div>
+</div>

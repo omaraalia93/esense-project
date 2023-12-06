@@ -1,0 +1,45 @@
+.item {
+    display: flex;
+    border: 1px solid var(--border-color);
+    padding: 0.4em 0.6em;
+    align-items: center;
+    margin-bottom: 0.4em;
+    
+    .text {
+        flex-grow: 1;
+        font-size: 0.8rem;
+        font-weight: bold;
+    }
+
+    .btns {
+        display: flex;
+        gap: 0.6em;
+
+        button {
+            display: flex;
+            align-items: center;
+            gap: 0.4em;
+            font-size: 0.8rem;
+            padding: 0.4em;
+            background: transparent;
+            border: 0;
+            cursor: pointer;
+
+            &.primary{
+                color: var(--color-primary);
+
+                svg  {
+                    color: var(--color-primary);
+                    stroke: var(--color-primary);
+                }
+            }
+            &.danger{
+                color: var(--color-danger);
+                svg  {
+                    color: var(--color-danger);
+                    stroke: var(--color-danger);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+:root {
+    --bg-color-header:#{$bg_color_header};
+    --bg-color-header-title:#{$bg_color_header_title};
+    --bg-color-tabs-bar:#{$bg_color_tabs_bar};
+    --bg-color-nav-bar:#{$bg_color_nav_bar};
+    --bg-color-nav-bar-filter:#{$bg_color_nav_bar_filter};
+    --bg-color-primary:#{$bg_color_primary};
+    --bg-color-primary-shade:#{$bg_color_primary_shade};
+    --bg-color-secondary:#{$bg_color_secondary};
+    --bg-color-disabled:#{$bg_color_disabled};
+    
+    --color-primary:#{$color_primary};
+    --color-primary-shade:#{$color_primary_shade};
+    --color-secondary:#{$color_secondary};
+    --color-danger:#{$color_danger};
+    --border-color:#{$border-color};
+}

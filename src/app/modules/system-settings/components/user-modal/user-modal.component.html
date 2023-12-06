@@ -1,0 +1,35 @@
+<div class="modal-overlay">
+    <div class="modal">
+        <div class="modal-header">
+            <span>{{title | translate}}</span>
+
+            <svg class="pointer" (click)="close()" xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24" fill="none">
+                <g stroke="#000000" stroke-linecap="round" stroke-width="2">
+                  <path d="M6 18L18 6"/>
+                  <path d="M18 18L6 6"/>
+                </g>
+              </svg>
+        </div>
+        <div class="modal-body">
+            <form [formGroup]="modalForm" (ngSubmit)="onSubmit()">
+                <div class="form-group">
+                    <label for="name">{{'system_settings.users.name' | translate}}</label>
+                    <input type="text" id="name" formControlName="name" />
+                    <div class="text-danger" *ngIf="modalForm.get('name').errors?.['required']">
+                        {{'system_settings.users.name_required' | translate}}
+                    </div>
+                </div>
+              
+        
+                <div class="form-group">
+                    <label for="name">{{'system_settings.users.details' | translate}}</label>
+                    <input type="text" id="name" formControlName="details" />
+                </div>
+              </form>
+        </div>
+        <div class="modal-footer">
+            <button type="submit" [disabled]="modalForm.invalid" (click)="onSubmit()" class="btn btn-primary-shade w-30" >{{'general.save' | translate}}</button>
+            <button type="button" class="btn btn-secondary w-30" (click)="close()">{{'general.cancel' | translate}}</button>
+        </div>
+    </div>
+</div>

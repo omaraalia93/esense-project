@@ -1,0 +1,13 @@
+<ngx-spinner bdColor="rgba(255, 255, 255, 0.8)" fullscreen="true" template="<img src='../../assets/images/logo-esense.png' />">{{ "general.loading" | translate }}
+</ngx-spinner>
+<ngx-loading-bar [height]="'5px'" [color]="'#0071ba'" class="ngx-loading"></ngx-loading-bar>
+
+<app-header></app-header>
+
+<div class="tabs-bar">
+    <ng-container *ngFor="let tab of tabs">
+        <a class="tab" [routerLink]="tab.route" routerLinkActive="active">{{ tab.name  | translate }}</a>
+    </ng-container>
+</div>
+
+<router-outlet></router-outlet>

@@ -1,0 +1,38 @@
+<div class="list-container">
+    <div class="navbar-filter-container">
+        <button type="button" (click)="addName()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24" fill="none">
+                    <path d="M4 12H20M12 4V20" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>{{ "general.add" | translate }}</span>
+        </button>
+        <input type="search" [(ngModel)]="searchQuery" (input)="onSearch()"  [placeholder]="'system_settings.users.search_by_name' | translate">
+    </div>
+    
+    <div class="list">
+        <cdk-virtual-scroll-viewport itemSize="50" class="viewport" *ngIf="userData.length; else noDataFound">
+            <ng-container *cdkVirtualFor="let data of userData">
+                <app-list-item [item]="data" (edit)="editName($event)" (delete)="deleteName($event)"></app-list-item>
+            </ng-container>
+        </cdk-virtual-scroll-viewport>
+        
+        <ng-template #noDataFound>
+            {{ "general.no_data_found" | translate }}
+        </ng-template>
+    </div>
+</div>
+
+<app-user-modal 
+    *ngIf="userAddEditModalOpen" 
+    [title]="modalTitle" 
+    [editItem]="selectedUserItem" 
+    (submitModal)="submitAddEditModal($event)" 
+    (closeModal)="closeAddEditModal()">
+</app-user-modal>
+
+<app-alert-modal
+    *ngIf="userAlertModalOpen" 
+    [title]="modalTitle" 
+    (submitModal)="submitUserAlertModal()" 
+    (closeModal)="closeUserAlertModal()">
+</app-alert-modal>

@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  html,
+  body,
+  ul,
+  ol {
+    margin: 0;
+    padding: 0;
+  }
+  
+  ul,
+  ol {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+  }
+
+  button ,input { 
+    font-family: inherit;
+}
