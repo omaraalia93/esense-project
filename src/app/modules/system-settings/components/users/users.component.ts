@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { UserService } from '../../services/users-service.service';
 import { IUserData } from '../../models/user-data.model';
 import { ToastrService } from 'ngx-toastr';
@@ -11,7 +11,7 @@ import { Subscription } from 'rxjs';
   templateUrl: './users.component.html',
   styleUrls: ['./users.component.scss']
 })
-export class UsersComponent {
+export class UsersComponent implements OnInit,OnDestroy{
   userAddEditModalOpen:boolean;
   userAlertModalOpen:boolean;
   modalTitle:string;

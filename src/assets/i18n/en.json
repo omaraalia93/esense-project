@@ -10,7 +10,8 @@
         "yes":"yes",
         "no":"noe",
         "no_data_found":"No Data Found",
-        "change_language":"Change language"
+        "change_language":"Change language",
+        "page_not_found":"Page Not Found"
     },
     "header": {
         "user_image":"User image"

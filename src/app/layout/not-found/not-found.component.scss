@@ -1,0 +1,16 @@
+:host {
+    flex-grow: 1;
+}
+
+.not-found {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+
+    img {
+        width: 20%;
+        max-width: 200px;
+    }
+}

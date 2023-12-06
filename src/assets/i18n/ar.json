@@ -10,7 +10,8 @@
         "yes":"نعم",
         "no":"لا",
         "no_data_found":"لا يوجد بيانات",
-        "change_language":"تغيير اللغة"
+        "change_language":"تغيير اللغة",
+        "page_not_found":"الصفحة ليست موجودة"
     },
     "header": {
         "user_image":"صورة المستخدم"
